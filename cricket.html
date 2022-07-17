@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is my Cricek Animation</title>
+    <style>
+        .fild {
+            border: 1px solid;
+        }
+
+        .fild:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .bat {
+            transition: transform 0.2s ease-in;
+        }
+
+        .ball {
+            height: 20px;
+            width: 20px;
+            background-color: crimson;
+            border-radius: 10px;
+            position: relative;
+            left: 303px;
+            transition: transform 1s ease-out 0.2s;
+        }
+
+        .fild:hover .ball {
+            transform: translate(1000px, -100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fild">
+        <img class="bat" src="images-bat-removebg-preview.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

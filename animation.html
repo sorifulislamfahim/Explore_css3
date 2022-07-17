@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lets start CSS Animation</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: coral;
+                left: 0;
+                top: 0;
+                transform: scale(0.5);
+            }
+
+            25% {
+                top: 260px;
+                background-color: blue;
+            }
+
+            50% {
+                top: 0;
+                background-color: brown;
+            }
+
+            75% {
+                top: 250px;
+                background-color: darkred;
+            }
+
+            100% {
+                background-color: lawngreen;
+                left: 650px;
+                top: 0;
+            }
+        }
+
+        .stage {
+            height: 300px;
+            width: 700px;
+            background-color: lightseagreen;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: relative;
+            background-color: coral;
+            animation: sliding 3s ease-in-out 0.5s infinite alternate forwards;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

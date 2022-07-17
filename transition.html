@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is transition menu</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid lightblue;
+            background-color: burlywood;
+            transition: width 5s, height 5s, transform 2s;
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Transition</div>
+    <div class="box">transition1</div>
+    <div class="box">transition2</div>
+    <div class="box">transition3</div>
+    <div class="box">transition4</div>
+    <div class="box">transition5</div>
+</body>
+
+</html>
